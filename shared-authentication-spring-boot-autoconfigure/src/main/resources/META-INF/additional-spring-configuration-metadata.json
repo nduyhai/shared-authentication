@@ -1,0 +1,11 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "authentication.shared.issuer-uri",
+      "type": "java.util.List<java.lang.String>",
+      "description": "List issuer uri.",
+      "defaultValue": []
+    }
+  ]
+}

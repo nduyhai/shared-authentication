@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: kc-example
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+
+authentication:
+  shared:
+    issuer-uri:
+      - http://localhost:8080/realms/xxx
+      - http://localhost:8080/realms/yyy
+logging:
+  level:
+    root: debug
