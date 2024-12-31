@@ -1,4 +1,4 @@
-package com.example.shared.authentication;
+package com.nduyhai.shared.authentication;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

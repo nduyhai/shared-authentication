@@ -1,4 +1,4 @@
-package com.example.shared.authentication;
+package com.nduyhai.shared.authentication;
 
 
 import java.util.List;

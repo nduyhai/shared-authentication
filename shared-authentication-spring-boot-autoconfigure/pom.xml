@@ -9,7 +9,7 @@
     <version>3.4.0</version>
     <relativePath/>
   </parent>
-  <groupId>com.example</groupId>
+  <groupId>com.nduyhai</groupId>
   <artifactId>shared-authentication-spring-boot-autoconfigure</artifactId>
   <name>shared-authentication-spring-boot-autoconfigure</name>
   <description>shared-authentication-spring-boot-autoconfigure</description>
@@ -20,7 +20,7 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.example</groupId>
+      <groupId>com.nduyhai</groupId>
       <artifactId>shared-authentication-core</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>

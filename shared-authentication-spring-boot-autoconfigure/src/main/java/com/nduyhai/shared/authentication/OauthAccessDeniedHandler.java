@@ -1,4 +1,4 @@
-package com.example.shared.authentication;
+package com.nduyhai.shared.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
@@ -14,6 +14,7 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 public class OauthAccessDeniedHandler implements AccessDeniedHandler {
   private final ObjectMapper objectMapper;
 
+  
   public OauthAccessDeniedHandler(ObjectMapper objectMapper) {
     this.objectMapper = objectMapper;
   }

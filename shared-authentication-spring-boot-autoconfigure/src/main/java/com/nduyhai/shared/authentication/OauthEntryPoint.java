@@ -1,4 +1,4 @@
-package com.example.shared.authentication;
+package com.nduyhai.shared.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;

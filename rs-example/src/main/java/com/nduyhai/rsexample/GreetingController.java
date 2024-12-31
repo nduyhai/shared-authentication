@@ -1,4 +1,4 @@
-package com.example.rsexample;
+package com.nduyhai.rsexample;
 
 import io.micrometer.observation.annotation.Observed;
 import lombok.extern.slf4j.Slf4j;
