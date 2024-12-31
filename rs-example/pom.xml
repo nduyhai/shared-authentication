@@ -11,7 +11,7 @@
   </parent>
   <groupId>com.nduyhai</groupId>
   <artifactId>rs-example</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <name>rs-example</name>
   <description>rs-example</description>
 
@@ -30,7 +30,7 @@
     <dependency>
       <groupId>com.nduyhai</groupId>
       <artifactId>shared-authentication-spring-boot-starter</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>

@@ -13,7 +13,7 @@
   <artifactId>shared-authentication-core</artifactId>
   <name>shared-authentication-core</name>
   <description>shared-authentication-core</description>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <dependencies>
 

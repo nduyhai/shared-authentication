@@ -6,7 +6,7 @@
   <groupId>com.nduyhai</groupId>
   <artifactId>shared-authentication</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <name>shared-authentication</name>
   <url>https://github.com/nduyhai/shared-authentication</url>
 

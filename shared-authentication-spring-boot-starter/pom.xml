@@ -13,13 +13,13 @@
   <artifactId>shared-authentication-spring-boot-starter</artifactId>
   <name>shared-authentication-spring-boot-starter</name>
   <description>shared-authentication-spring-boot-starter</description>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <dependencies>
     <dependency>
       <groupId>com.nduyhai</groupId>
       <artifactId>shared-authentication-spring-boot-autoconfigure</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
     </dependency>
 
   </dependencies>

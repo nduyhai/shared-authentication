@@ -13,7 +13,7 @@
   <artifactId>shared-authentication-spring-boot-autoconfigure</artifactId>
   <name>shared-authentication-spring-boot-autoconfigure</name>
   <description>shared-authentication-spring-boot-autoconfigure</description>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -22,7 +22,7 @@
     <dependency>
       <groupId>com.nduyhai</groupId>
       <artifactId>shared-authentication-core</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
