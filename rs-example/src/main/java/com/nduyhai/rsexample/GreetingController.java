@@ -1,5 +1,6 @@
 package com.nduyhai.rsexample;
 
+import com.nduyhai.shared.authentication.AuthUtils;
 import io.micrometer.observation.annotation.Observed;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
@@ -16,6 +17,8 @@ public class GreetingController {
   @GetMapping
   public String greeting(Authentication authentication) {
     log.info("Found login user {}", authentication);
+    log.info("Found login user from iss {}, sub {}", AuthUtils.getIssuer().orElse(""),
+        AuthUtils.getSub().orElse(""));
     return "Greetings from Spring Boot!";
   }
 }
