@@ -8,6 +8,7 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>shared-authentication</name>
+  <url>https://github.com/nduyhai/shared-authentication</url>
 
   <modules>
     <module>shared-authentication-core</module>
@@ -15,6 +16,13 @@
     <module>shared-authentication-spring-boot-starter</module>
     <module>rs-example</module>
   </modules>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/nduyhai/shared-authentication.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/nduyhai/shared-authentication.git</developerConnection>
+    <tag>shared-authentication-0.0.2</tag>
+    <url>${project.url}</url>
+  </scm>
 
   <distributionManagement>
     <repository>
