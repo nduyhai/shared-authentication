@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  kc_postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloakpassword
+    ports:
+      - "5432:5432"
+  kc_keycloak:
+    image: keycloak/keycloak:26.0.0
+    command: [ 'start-dev', '--import-realm', '--debug' ]
+    volumes:
+      - ./keycloak-realm-config:/opt/keycloak/data/import
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: adminpassword
+      KC_DB: postgres
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: keycloakpassword
+      KC_DB_URL_HOST: kc_postgres
+      KC_DB_URL_DATABASE: keycloak
+      KC_LOG_LEVEL: DEBUG
+      KC_PROXY: edge
+      KC_HOSTNAME_STRICT: 'false'
+      KC_HTTP_ENABLED: 'true'
+      KC_METRICS_ENABLED: 'true'
+      KC_HEALTH_ENABLED: 'true'
+      DEBUG_PORT: '*:5005'
+    ports:
+      - "8080:8080"
+      - "9000:9000"
+      - "5005:5005"
+    depends_on:
+      - kc_postgres
+
+

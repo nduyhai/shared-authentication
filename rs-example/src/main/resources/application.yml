@@ -1,19 +1,6 @@
 spring:
   application:
     name: kc-example
-  datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: 
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
 management:
   endpoints:
     web:
@@ -29,9 +16,11 @@ management:
 authentication:
   shared:
     issuer-uri:
-      - http://localhost:8080/realms/xxx
-      - http://localhost:8080/realms/yyy
+      - http://localhost:8080/realms/customer-auth
+      - http://localhost:8080/realms/merchant-auth
 logging:
   level:
-    root: debug
+    root: info
 
+server:
+  port: 8081
